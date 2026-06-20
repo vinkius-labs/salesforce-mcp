@@ -1,0 +1,21 @@
+{
+  "name": "@mcp-originals/salesforce-mcp",
+  "version": "1.0.0",
+  "description": "Salesforce CRM Edge-native MCP Server",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/server.ts",
+    "deploy": "mcpfusion deploy"
+  },
+  "dependencies": {
+    "@mcpfusion/core": "^4.3.0",
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}

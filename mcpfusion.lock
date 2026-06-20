@@ -1,0 +1,455 @@
+{
+  "capabilities": {
+    "tools": {
+      "create_record": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [
+            "default"
+          ],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:443671c0f7d97bfdb4dc811676a4495982fe4d3ac3e4f79d40064a33e4d2c6fe",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Creates a record of any SObject type. Provide JSON fields as a string.\n\nCreate a new Salesforce record.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Creates a record of any SObject type. Provide JSON fields as a string.\n\nCreate a new Salesforce record.. Requires: sobject, json_fields [DESTRUCTIVE]",
+          "inputSchemaDigest": "sha256:b8588f684d625ba9047f95f76ae561043877c70f78b9f77c839d35e79915ee95",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "delete_record": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [
+            "default"
+          ],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:00e64ddd5547652b30970433ba5de231267535d1885f3f8549c418f27da98d5e",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Permanently removes a record. This action is irreversible.\n\nDelete a Salesforce record.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Permanently removes a record. This action is irreversible.\n\nDelete a Salesforce record.. Requires: sobject, id [DESTRUCTIVE]",
+          "inputSchemaDigest": "sha256:d5e1273e1f26c36e5ea441df86d28f46dc97bfa4fca9d0b253d930f052fd25a8",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "describe_object": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:7957fbef3ca31221ab7abe892a53695960a561428d21e1fad3995e04aa6a2258",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Returns object schema including field count, label, and key prefix. Useful for understanding data structure.\n\nGet metadata about a Salesforce object.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Returns object schema including field count, label, and key prefix. Useful for understanding data structure.\n\nGet metadata about a Salesforce object.. Requires: sobject",
+          "inputSchemaDigest": "sha256:9fe3a559cc4cb0809fd5cbf73757f3644c67d1f3fab0e20d50584abf93f208ac",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "get_record": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:60d369eddc319549b4dd17c9b786b8ee3736e3ea589eb8484080981b972911b7",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Fetches full record data. Specify the SObject type (Account, Contact, Opportunity, Case, Lead) and the record ID.\n\nGet a specific Salesforce record by type and ID.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Fetches full record data. Specify the SObject type (Account, Contact, Opportunity, Case, Lead) and the record ID.\n\nGet a specific Salesforce record by type and ID.. Requires: sobject, id",
+          "inputSchemaDigest": "sha256:5920aa44c1efe19f5d3e81fe9e79cd37d837f89fc4efb067ec50dffd40270d19",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "global_search": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:2016d31f9eb466179130db2bceb8a4a4fd400495f9caf5a3e525aba18fa9059a",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Full-text search using SOSL. Returns matches across Accounts, Contacts, Leads, and other objects simultaneously.\n\nSearch across all Salesforce objects.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Full-text search using SOSL. Returns matches across Accounts, Contacts, Leads, and other objects simultaneously.\n\nSearch across all Salesforce objects.. Requires: query",
+          "inputSchemaDigest": "sha256:3ddb9b660b14820805364a11136398615f6a8f73f276f8a8c284fa0d9ce0cdf7",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "list_accounts": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:a28ffd8040b1eb2ed527a8bb8a0ccefeb70d3c545705bcbf7a84e43ae1d85c26",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Returns account names and IDs ordered by creation date.\n\nList Salesforce accounts.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Returns account names and IDs ordered by creation date.\n\nList Salesforce accounts.",
+          "inputSchemaDigest": "sha256:8101693919f935be6a45a7a70050553be07827150fb9f5e5d96963ce423ed3fb",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "list_contacts": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:d5a2e4684c58e8ae1cf4b31e301604d55a9fbf185048d63ea5f11f7d5cd67080",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Returns contact names and IDs ordered by creation date.\n\nList Salesforce contacts.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Returns contact names and IDs ordered by creation date.\n\nList Salesforce contacts.",
+          "inputSchemaDigest": "sha256:8101693919f935be6a45a7a70050553be07827150fb9f5e5d96963ce423ed3fb",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "list_opportunities": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:ab588b3c25584d33a7992f7d541a6be5cd74c50a38a006155565913ebb509a68",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Returns opportunity names and IDs ordered by creation date.\n\nList sales opportunities.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Returns opportunity names and IDs ordered by creation date.\n\nList sales opportunities.",
+          "inputSchemaDigest": "sha256:8101693919f935be6a45a7a70050553be07827150fb9f5e5d96963ce423ed3fb",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "list_reports": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:34e606b54c8662c759fb0e288846e8049914019c59c641551ee6a5aed755fdca",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Returns all reports with their IDs and developer names for subsequent execution.\n\nList available Salesforce reports.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Returns all reports with their IDs and developer names for subsequent execution.\n\nList available Salesforce reports.",
+          "inputSchemaDigest": "sha256:ff7f9701c139118f18ec0bf38f0804c0db15365bb597f49b14ccb922f6c86adc",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "run_report": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [
+            "default"
+          ],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:4ec0372dfc376853ef5501ffcef472d0e782c5cd5eef9e5d6ab95c408480097e",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Runs a report by ID and returns the aggregated data. Use list_reports first to find the report ID.\n\nExecute a Salesforce report and get results.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Runs a report by ID and returns the aggregated data. Use list_reports first to find the report ID.\n\nExecute a Salesforce report and get results.. Requires: report_id [DESTRUCTIVE]",
+          "inputSchemaDigest": "sha256:aa1fa6310ac0c30a9c71aeda4b822ca6c2ac1ff15c2671cc66f57b2978a537c5",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "soql_query": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:2eda2037c2ad10eee550c4466d1a34d5c2d19fa49df8d18b6a379ff3769fac03",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Run any SOQL query to retrieve records. Example: SELECT Id, Name FROM Account WHERE Industry = 'Technology' LIMIT 10\n\nExecute a SOQL query against Salesforce.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Run any SOQL query to retrieve records. Example: SELECT Id, Name FROM Account WHERE Industry = 'Technology' LIMIT 10\n\nExecute a SOQL query against Salesforce.. Requires: query",
+          "inputSchemaDigest": "sha256:9539bc5fb1960af7e2c5e132e92416565a9e5753542ce58b6272a8d6f487a3f2",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "update_record": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [
+            "default"
+          ],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:83e5e69c752beb9a1e677e89870d548952eabccc18fc3ebfc2637bbf10f1c735",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Updates specific fields on a record. Provide the SObject type, ID, and JSON fields to update.\n\nUpdate an existing Salesforce record.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Updates specific fields on a record. Provide the SObject type, ID, and JSON fields to update.\n\nUpdate an existing Salesforce record.. Requires: sobject, id, json_fields [DESTRUCTIVE]",
+          "inputSchemaDigest": "sha256:164aebf46383f658638f94742b8685b574c6796e1f315b3eed680b60b389e079",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      }
+    }
+  },
+  "generatedAt": "2026-06-20T06:35:25.621Z",
+  "integrityDigest": "sha256:33c1d4eab03a8d66a9bb36f51024f13eb0c46fff4235917df8a21ad7c139ac74",
+  "lockfileVersion": 1,
+  "mcpfusionVersion": "4.3.0",
+  "serverName": "mcpfusion-server"
+}
