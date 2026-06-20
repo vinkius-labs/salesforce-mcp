@@ -1,6 +1,7 @@
 # ☁️ Salesforce CRM Model Context Protocol (MCP)
 
-[![Deploy on Vinkius Cloud](https://img.shields.io/badge/Deploy%20on-Vinkius%20Cloud-blue?style=for-the-badge)](https://vinkius.com/mcp/salesforce)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salesforce)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/salesforce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/salesforce-mcp)
 
 Turn your AI into a fully autonomous sales operations manager. This server provides a native Model Context Protocol bridge directly into Salesforce CRM, allowing large language models (LLMs) to natively query, mutate, and analyze your enterprise data pipeline without writing a single line of API glue code.
 
@@ -10,7 +11,7 @@ Connecting ChatGPT, Claude, or any custom agent to your CRM usually involves bri
 
 ### Built for the Vinkius Edge Platform
 
-We designed this connector specifically to be hosted on the **Vinkius Cloud**. When you deploy your agentic infrastructure on Vinkius, you benefit from:
+We designed this connector specifically to be hosted on the **Vinkius Edge**. When you deploy your agentic infrastructure on Vinkius, you benefit from:
 - **Zero-Trust Security**: Vinkius securely stores your Salesforce OAuth tokens. The AI never sees your underlying credentials.
 - **Edge Performance**: Running on V8 isolates via Vinkius guarantees ultra-low latency, crucial when AI agents execute multi-step SOQL chain reasoning.
 - **Instant Scale**: Stop managing Node.js PM2 servers. Vinkius handles the infrastructure seamlessly.

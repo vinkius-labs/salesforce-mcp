@@ -1,7 +1,7 @@
 {
-  "name": "@mcp-originals/salesforce-mcp",
+  "name": "@mcp-listing/salesforce-mcp",
   "version": "1.0.0",
-  "description": "Salesforce CRM Edge-native MCP Server",
+  "description": "Salesforce CRM integration for the Model Context Protocol (MCP). Autonomous AI access to accounts, contacts, and SOQL queries.",
   "type": "module",
   "main": "dist/server.js",
   "scripts": {
@@ -17,5 +17,21 @@
     "@types/node": "^20.0.0",
     "tsx": "^4.7.0",
     "typescript": "^5.3.0"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "salesforce",
+    "crm",
+    "soql",
+    "enterprise",
+    "ai-agents",
+    "vinkius"
+  ],
+  "homepage": "https://vinkius.com/mcp/salesforce",
+  "author": "Vinkius",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinkius-labs/salesforce-mcp.git"
   }
 }
